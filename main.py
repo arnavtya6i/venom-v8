@@ -38,11 +38,11 @@ def install_requirements():
 install_requirements()
 
 # 🎛️ Telegram API token (replace with your actual token)
-TOKEN = '7624153564:AAGgt8ZIK-0x91BmlGCSpxVvWbRKNZY8W6w'
+TOKEN = '7731648992:AAGBZ9EqWMDPraFN9puu9j9UGQ5ZA3dM1iY'
 bot = telebot.TeleBot(TOKEN, threaded=False)
 
 # 🛡️ List of authorized user IDs (replace with actual IDs)
-AUTHORIZED_USERS = [1662067349]
+AUTHORIZED_USERS = [1662067349,1797435844]
 
 # 🌐 Global dictionary to keep track of user attacks
 user_attacks = {}
@@ -199,7 +199,7 @@ def show_id(message):
                                       f"👥 Your Username is: @{username}")
 
     # 👑 Printing the bot owner's username ⋆｡ﾟ☁︎｡⋆｡ ﾟ☾ ﾟ｡⋆⋆｡ﾟ☁︎｡⋆｡ ﾟ☾ ﾟ｡⋆
-    bot_owner = "venomXcrazy"  # 👑 The bot owner's username  ⋆｡ﾟ☁︎｡⋆｡ ﾟ☾ ﾟ｡⋆⋆｡ﾟ☁︎｡⋆｡ ﾟ☾ ﾟ｡⋆
+    bot_owner = "Sahil7010"  # 👑 The bot owner's username  ⋆｡ﾟ☁︎｡⋆｡ ﾟ☾ ﾟ｡⋆⋆｡ﾟ☁︎｡⋆｡ ﾟ☾ ﾟ｡⋆
     bot.send_message(message.chat.id, f"🤖 This bot is owned by: @{bot_owner}")
 
 # 💬 Command handler for /rules. ݁₊ ⊹ . ݁˖ . ݁. ݁₊ ⊹ . ݁˖ . ݁. ݁₊ ⊹ . ݁˖ . ݁
